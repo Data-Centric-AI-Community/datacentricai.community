@@ -10306,18 +10306,11 @@ sup {
   padding: 0 0 0 24px;
   color: #ffffff;
   cursor: pointer; }
-  .star-counter::after, .star-counter::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid; }
   .star-counter::before {
     content: "\2605";
-    top: 0;
-    left: -2px; }
+    position: absolute;
+    top: 2px;
+    left: 0px; }
   .star-counter::after {
     top: 50%;
     left: -5px;
@@ -10333,6 +10326,14 @@ sup {
   background-color: #E8E8E8;
   border-radius: 50%;
   overflow: hidden; }
+
+.repo .link {
+  display: block;
+  margin: 0 0 12px 0;
+  color: #E32212; }
+
+.repo .star-counter {
+  color: #B5B5B5; }
 
 .article {
   background-color: #ffffff; }

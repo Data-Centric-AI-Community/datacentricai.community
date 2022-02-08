@@ -381,20 +381,11 @@ sup {
     color: $c-white;
     cursor: pointer;
 
-    &::after, &::before {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 0;
-        height: 0;
-        border-color: transparent;
-        border-style: solid;
-    }
-
     &::before {
         content: "\2605";
-        top: 0;
-        left: -2px;
+        position: absolute;
+        top: 2px;
+        left: 0px;
     }
 
     &::after {
@@ -414,6 +405,18 @@ sup {
     background-color: $c-greyscale-20;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.repo {
+    .link {        
+        display: block;
+        margin: 0 0 ($baseSpacing * 2px) 0;
+        color: $c-primary-60;
+    }
+
+    .star-counter {        
+        color: $c-greyscale-60;
+    }
 }
 
 .article {

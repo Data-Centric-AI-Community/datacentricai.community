@@ -1,13 +1,26 @@
 const gRecaptchaKey = "6LdSzmYeAAAAAIIIoMe4Z6IkmyUYEwnL1gJgPvOw";
 
 window.onload = function () {
-    const env = 'prod';
+    const env = 'dev';
     const dom = document;
-    const repoStarsEndpoint = 'https://api.github.com/repos/ydataai/ydata-synthetic';
+    const repos = {
+        'ydata-synthetic': 'https://api.github.com/repos/ydataai/ydata-synthetic',
+        'pandas-profiling': 'https://api.github.com/repos/pandas-profiling/pandas-profiling',
+    };
+
     const $starCounter = dom.getElementById('star-counter');
     const $subscribeInit = dom.getElementById('subscribe-init');
     const $subscribeCTA = dom.getElementById('subscribe-cta');
     const $subscribeForm = dom.getElementById('subscribe-form');    
+    const $repos = [...dom.querySelectorAll('[data-star]')];
+    const starRequestsData = $repos.map(($repo) => {
+        const name = $repo.getAttribute('data-star');
+        return {
+            name: name,
+            endpoint: repos[name],
+            $element: $repo,
+        };
+    });
 
     // methods
 
@@ -24,15 +37,20 @@ window.onload = function () {
     $subscribeInit.addEventListener('click', enableSubscribeForm);
 
     // requests
-    fetch(repoStarsEndpoint)
-        .then((response) => {
-            if (!response.ok) throw new Error(response.message);
-            return response.json();
-        }).then((data) => {    
-            $starCounter.innerHTML = data.stargazers_count;
-        }).catch((error) => {
-            $starCounter.innerHTML = 'n/a';
-    });    
+
+    console.log(starRequestsData);
+
+    starRequestsData.forEach((starRequestData) => {
+        fetch(starRequestData.endpoint)
+            .then((response) => {
+                if (!response.ok) throw new Error(response.message);
+                return response.json();
+            }).then((data) => {    
+                starRequestData.$element.innerHTML = data.stargazers_count;
+            }).catch((error) => {
+                starRequestData.$element.innerHTML = 'n/a';
+        });
+    })    
 }
 
 // recaptcha
