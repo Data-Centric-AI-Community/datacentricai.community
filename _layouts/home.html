@@ -12,7 +12,7 @@
 				<div class="uk-container uk-margin">
 					<div class="hero text center">
 						<h1 class="heading">Welcome to<span class="heading-label"><label class="text bold">Data Centric AI</label> Community</span></h1>
-						<p class="description">You’re intrigued by the possibilities of Data Centric AI, and you want more. Join like-minded experts, thought-leaders and peers at the Data Centric Community!</p>
+						<p class="description">You’re intrigued by the possibilities of Data Centric AI, and you want more. Join like-minded experts, thought-leaders and peers at The Data Centric Community!</p>
 						<a href="https://github.com/ydataai/ydata-synthetic" target="_blank" class="button">Join us on Slack</a>
 						<a href="https://github.com/ydataai/ydata-synthetic" target="_blank" class="button"><img src="./assets/images/github.png" alt="Github">Join us on Github</a>
 					</div>
@@ -29,7 +29,7 @@
 						<div class="uk-child-width-expand@s uk-grid" uk-grid>
 							<div class="content-block">
 								<p class="paragraph text center">Data Centric AI is the approach to AI development that considers the training dataset as the centerpiece of the solution instead of the model.</p>
-								<p class="paragraph text center">Pioneered by Andrew Ng, data centric AI development has become a movement.</p>
+								<p class="paragraph text center">Coined by Andrew Ng, Data Centric AI has become a movement.</p>
 							</div>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 		<section class="section">
 			<div class="content">
 				<div class="uk-container">
-					<h2 class="sub-heading">The <span class="heading-label">Data Centric AI</span> is the place to discuss data quality for data science</h2>
+					<h2 class="sub-heading">The <span class="heading-label">Data Centric AI</span> is the place to discuss data quality for data science.</h2>
 					<div class="uk-container">
 						<div class="uk-child-width-expand@s uk-grid" uk-grid>
 							<div class="content-block">
@@ -49,7 +49,7 @@
                                     <div class="avatar"></div>
                                     <h3>Data Profiling</h3>
                                     <p>Understanding the existing data is the first step. Profile your data in a few lines of code.</p>
-                                    <a href="#" target="_blank" class="link">Try our pandas-profiling library</a>
+                                    <a href="#" target="_blank" class="link">Give a try on pandas-profiling!</a>
                                     <span class="star-counter" data-star="pandas-profiling">0</span>
                                 </div>
 							</div>
@@ -57,17 +57,16 @@
                                 <div class="repo">
                                     <div class="avatar"></div>
                                     <h3>Synthetic Data</h3>
-                                    <p>Synthetic data is artificially created that keeps the original data properties, ensuring its business value while being privacy compliant. Using synthetic data reduces the risk of records re-identification and opens up potential for innovation, collaboration and new revenue streams.</p>
-                                    <a href="#" target="_blank" class="link">Try our ydata-synthetic library</a>
+                                    <p>Synthetic data is artificially created that keeps the original data properties, ensuring its business value while being privacy compliant.</p>
+                                    <a href="#" target="_blank" class="link">Give a try on ydata-synthetic!</a>
                                     <span class="star-counter" data-star="ydata-synthetic">0</span>
                                 </div>
 							</div>
 							<div class="content-block">
                                 <div class="repo">
                                     <div class="avatar"></div>
-                                    <h3>Data Labelling</h3>
-                                    <p>Isn’t it one of your biggest pain points in data quality? The DCAI Community will cultivate meaningful discussions and expert partnerships in the days to come!</p>    
-                                    <label class="link">Coming soon</label>
+                                    <h3>Data Labeling</h3>
+                                    <p> Isn’t it one of your biggest pain points in data quality? The DCAI Community cultivates meaningful discussions around this and other topics!</p>
                                 </div>
 							</div>
 						</div>
@@ -77,20 +76,20 @@
 		</section>
 		<!-- /data section  -->
 		<!-- blog section  -->
-		<section class="section alternative">
+		<section id="learn-more" class="section alternative">
 			<div class="content">
 				<div class="uk-container">
-					<h2 class="sub-heading">Our <span class="heading-label">Blog</span></h2>
+					<h2 class="sub-heading">Want to <span class="heading-label">learn</span> more?</span></h2>
 					<div class="uk-container">
-						<div class="uk-grid-row-large uk-child-width-1-3@s" uk-grid>
+						<div class="uk-grid-row-large uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
 							{% for post in site.posts %}
 								<div class="content-block">
 									<article class="article">
 										<div class="image"></div>
 										<div class="content">
 											<h4 class="title">{{post.title}}</h4>
-											<p class="text alternative">Some text </p>
-											<a href="{{post.link}}" target="_blank" class="link">{{post.link}}</a>
+											<p class="text alternative">{{post.summary}}</p>
+											<a href="{{post.link}}" target="_blank" class="link">>></a>
 										</div>
 									</article>
 								</div>
@@ -102,7 +101,7 @@
 		</section>		
 		<!-- /blog section  -->
 		<!-- newsletter section  -->
-		<section class="section newsletter-section">
+		<section id="newsletter" class="section newsletter-section">
 			<div class="content">
 				<div class="uk-container">
 					<h2 class="sub-heading">Stay updated with our <span class="heading-label">Newsletter</span></h2>
@@ -110,7 +109,7 @@
 						<div class="uk-child-width-expand@s uk-grid" uk-grid>
 							<div class="content-block">
 								<div id="subscribe-cta">
-									<p class="paragraph text center">Sign up to The Gaussip, our weekly newsletter, with nuggets of information to keep up with useful articles, trending advancements in the space of AI and funny memes!</p>
+									<p class="paragraph text center">Keep in touch. Sign up to The Gaussip, our weekly newsletter, with nuggets of information to keep up with useful articles, trending advancements in the space of AI and funny memes!</p>
 									<button id="subscribe-init" class="button">Subscribe</button>
 								</div>
 								<div id="subscribe-form">
