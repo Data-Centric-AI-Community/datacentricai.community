@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Introducing the Data Centric AI Community"
+title:  "Versioning and Labeling — Better Together"
 #date: "2020-04-08 23:59:21 +0100"
 categories: ydata
-summary: A place to discuss data quality for data science.
-link: https://ydata.ai
+summary: Data labeling and data versioning provide a rock solid bedrock to build your machine learning models on now and in the future.
+link: https://towardsdatascience.com/versioning-and-labeling-better-together-2dd7d4fe8bd9
 ---
