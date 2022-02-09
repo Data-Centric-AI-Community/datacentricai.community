@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Pandas Profiling for Quicker Data Understanding"
+title:  "Synthetic Time-Series Data: A GAN approach"
 #date: "2020-04-08 23:59:21 +0100"
 categories: ydata
-summary: Read your data? Pause. Generate the Pandas Profiling report first.
-link: https://towardsdatascience.com/pandas-profiling-for-quicker-data-understanding-83bb9fc6719f?sk=157cd19b376ed957bf735b89b3b39132
+summary: Generate synthetic sequential data with TimeGAN.
+link: https://towardsdatascience.com/synthetic-time-series-data-a-gan-approach-869a984f2239
 ---

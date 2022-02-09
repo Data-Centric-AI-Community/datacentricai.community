@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "How to Validate the Quality of Your Synthetic Data"
+title:  "From model centric to data centric"
 #date: "2020-04-08 23:59:21 +0100"
 categories: ydata
-summary: A tutorial on how you can combine ydata-synthetic with great expectations.
-link: https://towardsdatascience.com/how-to-validate-the-quality-of-your-synthetic-data-34503eba6da
+summary: A new paradigm for AI development — focused on data quality.
+link: ​​https://towardsdatascience.com/from-model-centric-to-data-centric-4beb8ef50475
 ---
-

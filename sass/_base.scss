@@ -44,7 +44,6 @@ html {
 
 body {
 	color: $text-color;
-	font-family: "Nunito Sans";
 }
 
 // native elements
@@ -120,7 +119,7 @@ sup {
 
     .sub-heading {
         max-width: 700px;
-        margin: auto;
+        margin: auto auto 60px auto;
         text-align: center;
 
         .heading-label {
@@ -144,7 +143,7 @@ sup {
 		height: 100%;
 		max-width: $appWidth;
         margin: 0 auto; 
-		padding: 16px 40px;      
+		padding: 5px 40px;      
 	}
 
 	.logo {
@@ -269,7 +268,7 @@ sup {
     }
 
     .content-block {
-        margin: 40px 0;
+        margin: 20px 0;
     }
 
     .code-block {
@@ -292,6 +291,13 @@ sup {
         
         .brand {
             display: flex;
+            align-items: center;
+            margin-top: -30px;
+            
+            .image {
+                width: 160px;
+                margin-right: ($baseSpacing * 3px);
+            }
         }
 
         .heading {
@@ -303,7 +309,6 @@ sup {
 
         .link {
             display: block;
-            margin: ($baseSpacing * 3px) 0;
             text-align: left;
             color: $brand-light;
             font-size: 14px;            
@@ -323,11 +328,9 @@ sup {
 }
 
 .social-links {
-    display: flex;
-    flex-direction: row;
 
     .social-link {
-        margin-right: 18px;
+        
     }
 }
 
@@ -410,20 +413,15 @@ sup {
     }   
 }
 
-.avatar {
-    display: block;
-    height: 128px;
-    width: 128px;
-    background-color: $c-greyscale-20;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
 .repo {
     .link {        
         display: block;
         margin: 0 0 ($baseSpacing * 2px) 0;
         color: $c-primary-60;
+
+        &.disable {
+            opacity: 0.5;
+        }
     }
 
     .star-counter {        
@@ -478,6 +476,14 @@ sup {
     }
 }
 
+.social-links-list {
+    display: flex;
+    
+    .social-link {
+        margin-right: ($baseSpacing * 4px);
+    }
+}
+
 #subscribe-form {
     display: none;
 }
@@ -509,5 +515,9 @@ sup {
                 width: 160px;
             }
         }
+    }
+
+    .content {
+        padding: 0 40px;
     }
 }
