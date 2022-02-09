@@ -70,7 +70,7 @@ const subscribeExpiredCallback = function() {
 window.onloadCallback = function () {
     grecaptcha.render('subscribe-recaptcha', {
         'sitekey': gRecaptchaKey,
-        'theme': 'dark',
+        'theme': 'light',
         'callback': subscribeVerifyCallback,
         "expired-callback": subscribeExpiredCallback
     })

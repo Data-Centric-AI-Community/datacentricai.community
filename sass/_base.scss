@@ -24,6 +24,7 @@ $textBaseSmall: 14px;
 $textSmallest: ($baseSpacing*2) * 1px;
 
 // Transitions
+$actionTransitions: all 0.2s ease;
 $navLinkHeight: 2px;
 $labelColor: $brand-light;
 $labelTransitionDuration: 0.4s;
@@ -166,42 +167,36 @@ sup {
 			margin: 0 0 0 ($baseSpacing*5px);
 			text-decoration: none;			
             color: $c-white;            
+            transition: $actionTransitions;
 
             &.round {
-                border: 2px solid $c-white;
+                border: 3px solid $c-white;
                 border-radius: 80px;
+
+                &:hover {
+                    border-color: $c-primary-60;
+                }
             }
-            
-            &.active {
+
+            &.linear {
                 &::after {
                     content: "";
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                    height: $navLinkHeight;
+                    height: 3px;
                     width: 100%;
-                    background-color: $brand-primary;
-                    transform: scaleX(1);
+                    background-color: $c-primary-60;
+                    transform: scaleX(0);
+                    transition: $actionTransitions;
+                }
+    
+                &:hover {
+                    &::after {
+                        transform: scaleX(1);
+                    }
                 }
             }
-
-			&::after {
-				content: "";
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				height: $navLinkHeight;
-				width: 100%;
-				background-color: $brand-primary;
-				transform: scaleX(0);
-				transition: transform 0.2s ease;
-			}
-
-			&:hover {
-				&::after {
-					transform: scaleX(1);
-				}
-			}
 		}
 	}
 	
@@ -246,7 +241,7 @@ sup {
 
 		.description {
 			position: relative;
-			max-width: 560px;
+			max-width: 680px;
             font-size: $textHuge;
 			line-height: 24px;
             margin: ($baseSpacing * 6px) auto;
@@ -275,10 +270,6 @@ sup {
 
     .content-block {
         margin: 40px 0;
-        
-        img {
-            border: 1px solid #f2f1f1;
-        }
     }
 
     .code-block {
@@ -298,6 +289,10 @@ sup {
         background-color: $layout-footer-background-color;        
         border-top: ($baseSpacing * 3px) solid $c-primary-60;
         text-align: center;
+        
+        .brand {
+            display: flex;
+        }
 
         .heading {
             text-align: left;
@@ -318,6 +313,12 @@ sup {
             display: block;
             width: 200px;
         }
+
+        .heading {
+            .alternative {
+                display: block;
+            }
+        }
     }
 }
 
@@ -335,12 +336,23 @@ sup {
 .button {
     position: relative;
     background-color: $c-primary-60;
-    color: #fff;
-    padding: ($baseSpacing * 2px) ($baseSpacing * 4px);
+    color: $c-white;
+    padding: ($baseSpacing * 3px) ($baseSpacing * 4px);
     font-size: 18px;
     border-radius: 4px;
     border: 0;
     cursor: pointer;
+    transition: $actionTransitions;
+
+    &:hover {
+        background-color: $c-primary-50;
+        text-decoration: none;
+        color: $c-white;
+    }
+
+    &:active {
+        background-color: $c-primary-70;
+    }
 
     img {
         position: absolute;
@@ -416,10 +428,16 @@ sup {
 
     .star-counter {        
         color: $c-greyscale-60;
+        transition: $actionTransitions;
+
+        &:hover {
+            color: $c-greyscale-80;
+        }
     }
 }
 
 .article {
+    position: relative;
     background-color: $c-white;
 
     .image {
@@ -434,8 +452,29 @@ sup {
         margin: 0 0 ($baseSpacing * 3px) 0;
     }
 
+    .text {
+        display: -webkit-box;
+        height: 78px;
+        max-width: 100%;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
     .content {
+        height: 226px;
         padding: ($baseSpacing * 3px);
+    }
+
+    .link {
+        position: absolute;
+        right: ($baseSpacing * 3px);
+        bottom: ($baseSpacing * 3px);
+        color: $c-primary-60;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -446,7 +485,7 @@ sup {
 /* overrides */
 
 .uk-container-small {
-    max-width: 620px;
+    max-width: 680px;
 }
 
 /* pages */
@@ -465,7 +504,7 @@ sup {
             margin-top: 0px;
         }
 
-        .footer {
+        .footer {           
             .logo {
                 width: 160px;
             }
