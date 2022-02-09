@@ -10165,7 +10165,7 @@ sup {
       color: #ffffff;
       transition: all 0.2s ease; }
       .app .nav .link.round {
-        border: 3px solid #ffffff;
+        border: 2px solid #ffffff;
         border-radius: 80px; }
         .app .nav .link.round:hover {
           border-color: #E32212; }
