@@ -9,6 +9,11 @@
   src: url("./fonts/NunitoSans/NunitoSans-ExtraBold.ttf");
   font-weight: bold; }
 
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./fonts/NunitoSans/NunitoSans-Light.ttf");
+  font-weight: 200; }
+
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -10105,17 +10110,17 @@ sup {
   background-color: #1c1d21;
   border-radius: 4px; }
 
-.text.center, .paragraph.center {
-  text-align: center; }
-
-.text.bold, .paragraph.bold {
-  font-weight: bold; }
-
-.text.light, .paragraph.light {
-  font-weight: lighter; }
-
-.text.alternative, .paragraph.alternative {
-  color: #B5B5B5; }
+.text, .paragraph {
+  font-size: 18px;
+  line-height: 24px; }
+  .text.center, .paragraph.center {
+    text-align: center; }
+  .text.bold, .paragraph.bold {
+    font-weight: bold; }
+  .text.light, .paragraph.light {
+    font-weight: 400; }
+  .text.alternative, .paragraph.alternative {
+    color: #B5B5B5; }
 
 .app {
   position: relative;
@@ -10198,8 +10203,6 @@ sup {
     .app .section .content {
       max-width: 1280px;
       margin: auto; }
-      .app .section .content .paragraph {
-        margin: 0; }
   .app .hero {
     margin-top: 80px;
     padding: 36px 0; }
@@ -10210,20 +10213,24 @@ sup {
         width: 60%; }
       .app .hero .content.lesser {
         width: 40%; }
+    .app .hero .description {
+      margin: 36px auto; }
     .app .hero .heading {
       font-size: 48px; }
-    .app .hero .description {
-      position: relative;
-      max-width: 680px;
-      font-size: 18px;
-      line-height: 24px;
-      margin: 36px auto; }
     .app .hero .button {
       display: inline-block;
       margin-right: 18px;
       padding-left: 48px; }
       .app .hero .button img {
         width: 24px; }
+  .app .description {
+    position: relative;
+    max-width: 680px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: auto; }
+    .app .description .paragraph {
+      margin: 0; }
   .app .badges {
     margin-top: 30px; }
     .app .badges .badge {
@@ -10319,8 +10326,8 @@ sup {
   .star-counter::before {
     content: "\2605";
     position: absolute;
-    top: 2px;
-    left: 0px; }
+    top: 0;
+    left: 0; }
   .star-counter::after {
     top: 50%;
     left: -5px;
@@ -10331,16 +10338,22 @@ sup {
 
 .repo .link {
   display: block;
-  margin: 0 0 12px 0;
-  color: #E32212; }
+  color: #E32212;
+  font-weight: bold;
+  text-decoration: none; }
   .repo .link.disable {
     opacity: 0.5; }
-
-.repo .star-counter {
-  color: #B5B5B5;
-  transition: all 0.2s ease; }
-  .repo .star-counter:hover {
+  .repo .link:hover .label {
+    text-decoration: underline; }
+  .repo .link:hover .star-counter {
+    text-decoration: none;
     color: #696969; }
+  .repo .link .star-counter {
+    display: block;
+    margin: 12px 0 0 0;
+    color: #B5B5B5;
+    transition: all 0.2s ease;
+    text-decoration: none; }
 
 .article {
   position: relative;
@@ -10368,8 +10381,6 @@ sup {
     right: 18px;
     bottom: 18px;
     color: #E32212; }
-    .article .link:hover {
-      text-decoration: underline; }
 
 .social-links-list {
   display: flex; }
@@ -10384,14 +10395,36 @@ sup {
   max-width: 680px; }
 
 /* pages */
+@media (max-width: 960px) {
+  .app .footer .logo {
+    display: block;
+    width: 160px;
+    margin: auto; }
+  .app .footer .brand {
+    justify-content: center; }
+  .app .footer .heading {
+    text-align: center; }
+  .app .footer .social-links-list {
+    align-items: center;
+    justify-content: center; } }
+
 @media (max-width: 640px) {
   .app .top-nav {
     padding: 12px; }
   .app .logo {
     width: 50px; }
   .app .hero {
-    margin-top: 0px; }
-  .app .footer .logo {
-    width: 160px; }
+    margin-top: 60px; }
+    .app .hero .heading {
+      font-size: 36px; }
+    .app .hero .button {
+      display: block;
+      width: 100%;
+      margin: 24px 0; }
+  .app .brand {
+    justify-content: center; }
+  .app .repo .image {
+    display: block;
+    margin: auto; }
   .content {
     padding: 0 40px; } }

@@ -71,6 +71,9 @@ sup {
 // text
 
 .text, .paragraph {
+    font-size: ($baseSpacing * 3px);
+    line-height: ($baseSpacing * 4px);
+
     &.center {
         text-align: center;
     }
@@ -80,7 +83,7 @@ sup {
     }
 
     &.light {
-       font-weight: lighter; 
+       font-weight: 400; 
     }
 
     &.alternative {
@@ -210,10 +213,6 @@ sup {
         .content {
             max-width: $appWidth;
             margin: auto;
-
-            .paragraph {
-                margin: 0;
-            }
         }
 	}
 
@@ -234,17 +233,13 @@ sup {
             }
         }
 
+        .description {
+            margin: ($baseSpacing * 6px) auto;
+        }
+
 		.heading {
 			font-size: 48px;
-		}
-
-		.description {
-			position: relative;
-			max-width: 680px;
-            font-size: $textHuge;
-			line-height: 24px;
-            margin: ($baseSpacing * 6px) auto;
-		}
+		}		
 
         .button {            
             display: inline-block;
@@ -256,6 +251,18 @@ sup {
             }
         }
 	}
+
+    .description {
+        position: relative;
+        max-width: 680px;
+        font-size: $textHuge;
+        line-height: 24px;
+        margin: auto;
+
+        .paragraph {
+            margin: 0;
+        }
+    }
 
     .badges {
         margin-top: ($baseSpacing * 5px);
@@ -327,13 +334,6 @@ sup {
     }
 }
 
-.social-links {
-
-    .social-link {
-        
-    }
-}
-
 /* components */
 
 .button {
@@ -399,8 +399,8 @@ sup {
     &::before {
         content: "\2605";
         position: absolute;
-        top: 2px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
 
     &::after {
@@ -416,22 +416,33 @@ sup {
 .repo {
     .link {        
         display: block;
-        margin: 0 0 ($baseSpacing * 2px) 0;
         color: $c-primary-60;
+        font-weight: bold;
+        text-decoration: none;
 
         &.disable {
             opacity: 0.5;
         }
-    }
-
-    .star-counter {        
-        color: $c-greyscale-60;
-        transition: $actionTransitions;
 
         &:hover {
-            color: $c-greyscale-80;
+            .label {
+                text-decoration: underline;
+            }
+
+            .star-counter {            
+                text-decoration: none;
+                color: $c-greyscale-80;
+            }
+        }        
+
+        .star-counter {
+            display: block;
+            margin: ($baseSpacing * 2px) 0 0 0;
+            color: $c-greyscale-60;
+            transition: $actionTransitions;
+            text-decoration: none;
         }
-    }
+    }    
 }
 
 .article {
@@ -469,10 +480,6 @@ sup {
         right: ($baseSpacing * 3px);
         bottom: ($baseSpacing * 3px);
         color: $c-primary-60;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 }
 
@@ -496,6 +503,31 @@ sup {
 
 /* pages */
 
+@media (max-width: $breakpoint-medium) { 
+    .app {
+        .footer {           
+            .logo {
+                display: block;
+                width: 160px;
+                margin: auto;
+            }
+
+            .brand {
+                justify-content: center;
+            }
+    
+            .heading {
+                text-align: center;
+            }
+    
+            .social-links-list {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
 @media (max-width: $breakpoint-small) {
     .app {
         .top-nav {
@@ -507,14 +539,29 @@ sup {
         }
 
         .hero {
-            margin-top: 0px;
-        }
+            margin-top: 60px;
 
-        .footer {           
-            .logo {
-                width: 160px;
+            .heading {
+                font-size: ($baseSpacing * 6px);
+            }
+
+            .button {                
+                display: block;
+                width: 100%;
+                margin: ($baseSpacing * 4px) 0;
             }
         }
+
+        .brand {
+            justify-content: center;
+        }
+
+        .repo {
+            .image {
+                display: block;
+                margin: auto;
+            }
+        }        
     }
 
     .content {
