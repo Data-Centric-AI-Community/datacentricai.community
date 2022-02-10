@@ -243,11 +243,10 @@ sup {
 
         .button {            
             display: inline-block;
-            margin-right: ($baseSpacing * 3px);
-            padding-left: ($baseSpacing * 8px);
+            margin-right: ($baseSpacing * 4px);
 
             img {
-                width: 24px;
+                margin-right: ($baseSpacing * 4px);
             }
         }
 	}
@@ -341,7 +340,7 @@ sup {
     background-color: $c-primary-60;
     color: $c-white;
     padding: ($baseSpacing * 3px) ($baseSpacing * 4px);
-    font-size: 18px;
+    font-size: ($baseSpacing * 3px);
     border-radius: 4px;
     border: 0;
     cursor: pointer;
@@ -355,14 +354,6 @@ sup {
 
     &:active {
         background-color: $c-primary-70;
-    }
-
-    img {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: ($baseSpacing * 2px);
-        margin: auto ($baseSpacing * 2px) auto auto;
     }
 }
 
@@ -379,6 +370,11 @@ sup {
     padding: ($baseSpacing * 3px);
     border: 1px solid $c-greyscale-40;
     border-radius: 4px;
+    font-size: ($baseSpacing * 3px);
+}
+
+.label {
+    font-size: ($baseSpacing * 3px);
 }
 
 .note {
@@ -449,12 +445,18 @@ sup {
     position: relative;
     background-color: $c-white;
 
-    .image {
+    .frame {
         display: block;
-        height: 300px;
+        height: 245px;
         width: 100%;
         background-color: $c-greyscale-60;
         overflow: hidden;
+    }
+
+    .image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .title {
@@ -488,6 +490,12 @@ sup {
     
     .social-link {
         margin-right: ($baseSpacing * 4px);
+    }
+}
+
+#newsletter {
+    .form {
+        margin-top: ($baseSpacing * 8px);
     }
 }
 

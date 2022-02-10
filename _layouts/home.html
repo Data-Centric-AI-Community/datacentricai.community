@@ -87,7 +87,9 @@
 							{% for post in site.posts %}
 								<div class="content-block">
 									<article class="article">
-										<div class="image"></div>
+										<div class="frame">
+                                            <img src="{{post.image}}" alt="image" class="image">
+                                        </div>
 										<div class="content">
 											<h4 class="title">{{post.title}}</h4>
 											<p class="text alternative">{{post.summary}}</p>
@@ -110,17 +112,17 @@
 					<div class="uk-container uk-container-small">
 						<div class="uk-child-width-expand@s uk-grid" uk-grid>
 							<div>
-								<div id="subscribe-cta">
-									<p class="paragraph text center">Keep in touch. Sign up to The Gaussip, our weekly newsletter, with nuggets of information to keep up with useful articles, trending advancements in the space of AI and funny memes!</p>
+                                <p class="paragraph text center">Keep in touch. Sign up to The Gaussip, our weekly newsletter, with nuggets of information to keep up with useful articles, trending advancements in the space of AI and funny memes!</p>
+								<div id="subscribe-cta">									
 									<button id="subscribe-init" class="button">Subscribe</button>
 								</div>
 								<div id="subscribe-form">
 									<form id="data-centric-subscribe-form" class="form" action="#">
-										<label for="subscribe-firstname">First Name<sup>*</sup></label>
+										<label class="label" for="subscribe-firstname">First Name<sup>*</sup></label>
 										<input id="subscribe-firstname" class="input" name="firstname" type="text" placeholder="Your First Name" required>
-										<label for="subscribe-lastname">Last Name<sup>*</sup></label>
+										<label class="label" for="subscribe-lastname">Last Name<sup>*</sup></label>
 										<input id="subscribe-lastname" class="input" name="lastname" type="text" placeholder="Your Last Name" required>
-										<label for="subscribe-email">Email<sup>*</sup></label>
+										<label class="label" for="subscribe-email">Email<sup>*</sup></label>
 										<input id="subscribe-email" class="input" name="email" type="text" placeholder="Your Email">
 										<fieldset id="subscribe-recaptcha"></fieldset>
 										<input id="subscribe-submit" class="button submit" type="submit" value="Subscribe" name="submit" disabled="" required>

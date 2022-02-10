@@ -3,6 +3,7 @@ layout: post
 title:  "From model centric to data centric"
 #date: "2020-04-08 23:59:21 +0100"
 categories: ydata
+image: ./assets/blog/05.jpeg
 summary: A new paradigm for AI development — focused on data quality.
-link: ​​https://towardsdatascience.com/from-model-centric-to-data-centric-4beb8ef50475
+link: https://towardsdatascience.com/from-model-centric-to-data-centric-4beb8ef50475
 ---
