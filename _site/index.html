@@ -42,19 +42,31 @@
             <a href="https://github.com/ydataai" target="_blank" class="link linear">Github</a>
             <a href="#learn-more" target="_self" class="link linear">Learn More</a>            
             <a href="#newsletter" target="_self" class="link round">Newsletter</a>
-        </nav>        
+        </nav>
+        <button class="burguer-menu">
+            <span class="burguer-item burguer-item-top"></span>
+            <span class="burguer-item burguer-item-center"></span>
+            <span class="burguer-item burguer-item-bottom"></span>
+        </button>        
     </header>
 </div>
+
+        <nav class="overlay-nav">
+            <a href="http://slack.ydata.ai/" target="_blank" class="link">Slack</a>
+            <a href="https://github.com/ydataai" target="_blank" class="link">Github</a>
+            <a href="#learn-more" target="_self" class="link">Learn More</a>            
+            <a href="#newsletter" target="_self" class="link">Newsletter</a>
+        </nav>
 
 		<!-- hero section  -->
 		<section class="section">
 			<div class="content">
 				<div class="uk-container uk-margin">
 					<div class="hero text center">
-						<h1 class="heading">Welcome to<span class="heading-label">the <label class="text bold">Data Centric AI</label> Community</span></h1>
+						<h1 class="heading">Welcome to<span class="heading-label">the <strong>Data Centric AI</strong> Community</span></h1>
 						<div class="description">
-                            <p class="paragraph text center">You’re intrigued by the possibilities of Data Centric AI, and you want more.</p>
-                            <p class="paragraph text center">Join like-minded experts, thought-leaders and peers at the Data Centric Community!</p>
+                            <p class="paragraph center">You’re intrigued by the possibilities of Data Centric AI, and you want more.</p>
+                            <p class="paragraph center">Join like-minded experts, thought-leaders and peers at the Data Centric Community!</p>
                         </div>
 						<a href="https://github.com/ydataai/ydata-synthetic" target="_blank" class="button"><img src="./assets/slack.svg" alt="Slack">Join us on Slack</a>
 						<a href="https://github.com/ydataai/ydata-synthetic" target="_blank" class="button"><img src="./assets/github.svg" alt="Github">Join us on Github</a>
@@ -70,9 +82,9 @@
 					<h2 class="sub-heading">Want to understand <span class="heading-label">Data Centric AI</span> better?</h2>
 					<div class="uk-container uk-container-small">
 						<div class="uk-child-width-expand@s uk-grid" uk-grid>
-							<div>
-								<p class="paragraph text center">Data Centric AI is the approach to AI development that considers the training dataset as the centerpiece of the solution instead of the model.</p>
-								<p class="paragraph text center">Coined by Andrew Ng, Data Centric AI has become a movement.</p>
+							<div class="description">
+								<p class="paragraph center">Data Centric AI is the approach to AI development that considers the training dataset as the centerpiece of the solution instead of the model.</p>
+								<p class="paragraph center">Coined by Andrew Ng, Data Centric AI has become a movement.</p>
 							</div>
 						</div>
 					</div>
@@ -89,27 +101,25 @@
 						<div class="uk-grid-row-large uk-child-width-1-3@m" uk-grid>
 							<div class="content-block">
                                 <div class="repo">
-                                    <img src="./assets/data-profiling.svg" alt="data-profiling">
+                                    <img src="./assets/data-profiling.svg" alt="data-profiling" class="image">
                                     <h3>Data Profiling</h3>
-                                    <p>Understanding the existing data is the first step. Profile your data in a few lines of code.</p>
-                                    <a href="#" target="_blank" class="link">Give a try on pandas-profiling!</a>
-                                    <span class="star-counter" data-star="pandas-profiling">0</span>
+                                    <p class="paragraph">Understanding the existing data is the first step. Profile your data in a few lines of code.</p>
+                                    <a href="https://github.com/pandas-profiling/pandas-profiling" target="_blank" class="link"><span class="label">Give a try on pandas-profiling!</span><span class="star-counter" data-star="pandas-profiling">0</span></a>                                    
                                 </div>
 							</div>
 							<div class="content-block">
                                 <div class="repo">
-                                    <img src="./assets/synthetic-data.svg" alt="synthetic-data">
+                                    <img src="./assets/synthetic-data.svg" alt="synthetic-data" class="image">
                                     <h3>Synthetic Data</h3>
-                                    <p>Synthetic data is artificially created that keeps the original data properties, ensuring its business value while being privacy compliant.</p>
-                                    <a href="#" target="_blank" class="link">Give a try on ydata-synthetic!</a>
-                                    <span class="star-counter" data-star="ydata-synthetic">0</span>
+                                    <p class="paragraph">Synthetic data is artificially created that keeps the original data properties, ensuring its business value while being privacy compliant.</p>
+                                    <a href="https://github.com/ydataai/ydata-synthetic" target="_blank" class="link"><span class="label">Give a try on ydata-synthetic!</span><span class="star-counter" data-star="ydata-synthetic">0</span></a>
                                 </div>
 							</div>
 							<div class="content-block">
                                 <div class="repo">
-                                    <img src="./assets/data-labeling.svg" alt="data-labeling">
+                                    <img src="./assets/data-labeling.svg" alt="data-labeling" class="image">
                                     <h3>Data Labeling</h3>
-                                    <p> Isn’t it one of your biggest pain points in data quality? The DCAI Community cultivates meaningful discussions around this and other topics!</p>
+                                    <p class="paragraph">Isn’t it one of your biggest pain points in data quality? The DCAI Community cultivates meaningful discussions around this and other topics!</p>
                                     <span class="link disable">Coming soon</span>
                                 </div>
 							</div>
@@ -129,7 +139,9 @@
 							
 								<div class="content-block">
 									<article class="article">
-										<div class="image"></div>
+										<div class="frame">
+                                            <img src="./assets/blog/06.jpeg" alt="image" class="image">
+                                        </div>
 										<div class="content">
 											<h4 class="title">Introducing the Data Centric AI Community</h4>
 											<p class="text alternative">A place to discuss data quality for data science.</p>
@@ -140,18 +152,22 @@
 							
 								<div class="content-block">
 									<article class="article">
-										<div class="image"></div>
+										<div class="frame">
+                                            <img src="./assets/blog/05.jpeg" alt="image" class="image">
+                                        </div>
 										<div class="content">
 											<h4 class="title">From model centric to data centric</h4>
 											<p class="text alternative">A new paradigm for AI development — focused on data quality.</p>
-											<a href="​​https://towardsdatascience.com/from-model-centric-to-data-centric-4beb8ef50475" target="_blank" class="link"><img src="./assets/chevron-right.svg" alt="Go to"></a>
+											<a href="https://towardsdatascience.com/from-model-centric-to-data-centric-4beb8ef50475" target="_blank" class="link"><img src="./assets/chevron-right.svg" alt="Go to"></a>
 										</div>
 									</article>
 								</div>
 							
 								<div class="content-block">
 									<article class="article">
-										<div class="image"></div>
+										<div class="frame">
+                                            <img src="./assets/blog/04.jpeg" alt="image" class="image">
+                                        </div>
 										<div class="content">
 											<h4 class="title">Pandas Profiling for Quicker Data Understanding</h4>
 											<p class="text alternative">Read your data? Pause. Generate the Pandas Profiling report first.</p>
@@ -162,7 +178,9 @@
 							
 								<div class="content-block">
 									<article class="article">
-										<div class="image"></div>
+										<div class="frame">
+                                            <img src="./assets/blog/03.png" alt="image" class="image">
+                                        </div>
 										<div class="content">
 											<h4 class="title">Synthetic Time-Series Data: A GAN approach</h4>
 											<p class="text alternative">Generate synthetic sequential data with TimeGAN.</p>
@@ -173,7 +191,9 @@
 							
 								<div class="content-block">
 									<article class="article">
-										<div class="image"></div>
+										<div class="frame">
+                                            <img src="./assets/blog/02.jpeg" alt="image" class="image">
+                                        </div>
 										<div class="content">
 											<h4 class="title">How to Validate the Quality of Your Synthetic Data</h4>
 											<p class="text alternative">A tutorial on how you can combine ydata-synthetic with great expectations.</p>
@@ -184,7 +204,9 @@
 							
 								<div class="content-block">
 									<article class="article">
-										<div class="image"></div>
+										<div class="frame">
+                                            <img src="./assets/blog/01.jpeg" alt="image" class="image">
+                                        </div>
 										<div class="content">
 											<h4 class="title">Versioning and Labeling — Better Together</h4>
 											<p class="text alternative">Data labeling and data versioning provide a rock solid bedrock to build your machine learning models on now and in the future.</p>
@@ -207,20 +229,20 @@
 					<div class="uk-container uk-container-small">
 						<div class="uk-child-width-expand@s uk-grid" uk-grid>
 							<div>
-								<div id="subscribe-cta">
-									<p class="paragraph text center">Keep in touch. Sign up to The Gaussip, our weekly newsletter, with nuggets of information to keep up with useful articles, trending advancements in the space of AI and funny memes!</p>
+                                <p class="paragraph text center">Keep in touch. Sign up to The Gaussip, our weekly newsletter, with nuggets of information to keep up with useful articles, trending advancements in the space of AI and funny memes!</p>
+								<div id="subscribe-cta">									
 									<button id="subscribe-init" class="button">Subscribe</button>
 								</div>
 								<div id="subscribe-form">
 									<form id="data-centric-subscribe-form" class="form" action="#">
-										<label for="subscribe-firstname">First Name<sup>*</sup></label>
+										<label class="label" for="subscribe-firstname">First Name<sup>*</sup></label>
 										<input id="subscribe-firstname" class="input" name="firstname" type="text" placeholder="Your First Name" required>
-										<label for="subscribe-lastname">Last Name<sup>*</sup></label>
+										<label class="label" for="subscribe-lastname">Last Name<sup>*</sup></label>
 										<input id="subscribe-lastname" class="input" name="lastname" type="text" placeholder="Your Last Name" required>
-										<label for="subscribe-email">Email<sup>*</sup></label>
+										<label class="label" for="subscribe-email">Email<sup>*</sup></label>
 										<input id="subscribe-email" class="input" name="email" type="text" placeholder="Your Email">
 										<fieldset id="subscribe-recaptcha"></fieldset>
-										<input id="subscribe-submit" class="button submit" type="submit" value="Subscribe" name="submit" disabled="" required>
+										<input id="subscribe-submit" class="button submit" type="submit" value="Subscribe" name="submit" disabled="">
 									</form>
 								</div>
 							</div>
@@ -272,4 +294,13 @@
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6266199.js"></script>
 <script src="./js/uikit.min.js"></script>
 <script src="./js/app.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y53FGGH91Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y53FGGH91Q');
+</script>
 </html>

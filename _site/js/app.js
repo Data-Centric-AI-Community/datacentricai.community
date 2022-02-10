@@ -8,11 +8,13 @@ window.onload = function () {
         'pandas-profiling': 'https://api.github.com/repos/pandas-profiling/pandas-profiling',
     };
 
-    const $starCounter = dom.getElementById('star-counter');
+    const $body = dom.querySelector('body');
+    const $burguerMenu = dom.querySelector('.burguer-menu');
+    const $overlayNav = dom.querySelector('.overlay-nav');
     const $subscribeInit = dom.getElementById('subscribe-init');
     const $subscribeCTA = dom.getElementById('subscribe-cta');
     const $subscribeForm = dom.getElementById('subscribe-form');    
-    const $repos = [...dom.querySelectorAll('[data-star]')];
+    const $repos = [...dom.querySelectorAll('[data-star]')];    
     const starRequestsData = $repos.map(($repo) => {
         const name = $repo.getAttribute('data-star');
         return {
@@ -23,7 +25,6 @@ window.onload = function () {
     });
 
     // methods
-
     function enableSubscribeForm() {
         $subscribeCTA.style.display = 'none';
         $subscribeForm.style.display = 'block';
@@ -33,13 +34,22 @@ window.onload = function () {
         e.preventDefault();
     }
 
+    function toggeMobileMenu(e={}) {
+        const stateClass = 'open'
+        if ($overlayNav.classList.contains(stateClass)) {
+            $overlayNav.classList.remove(stateClass);
+            $body.classList.remove('unscrollable');
+        } else {
+            $overlayNav.classList.add(stateClass);
+            $body.classList.add('unscrollable');
+        }
+    }
+
     // events
+    $burguerMenu.addEventListener('click', toggeMobileMenu);
     $subscribeInit.addEventListener('click', enableSubscribeForm);
 
     // requests
-
-    console.log(starRequestsData);
-
     starRequestsData.forEach((starRequestData) => {
         fetch(starRequestData.endpoint)
             .then((response) => {
