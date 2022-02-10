@@ -11,10 +11,16 @@ window.onload = function () {
     const $body = dom.querySelector('body');
     const $burguerMenu = dom.querySelector('.burguer-menu');
     const $overlayNav = dom.querySelector('.overlay-nav');
+    const $overlayNavLinks = dom.querySelectorAll('.overlay-nav .link');
     const $subscribeInit = dom.getElementById('subscribe-init');
-    const $subscribeCTA = dom.getElementById('subscribe-cta');
-    const $subscribeForm = dom.getElementById('subscribe-form');    
-    const $repos = [...dom.querySelectorAll('[data-star]')];    
+    const $subscribeForm = dom.getElementById('subscribe-form');   
+    const $subscribeSubmit = dom.getElementById('subscribe-submit');
+    const $formMessage = dom.querySelector('.form-message');
+    const $formFeedback = dom.querySelector('.form-feedback');
+    const $repos = [...dom.querySelectorAll('[data-star]')];
+    const $firstInput = dom.getElementById('subscribe-firstname');
+    const $newsletterLinks = dom.querySelectorAll('a[href="#newsletter"]');
+    const stateClass = 'open';
     const starRequestsData = $repos.map(($repo) => {
         const name = $repo.getAttribute('data-star');
         return {
@@ -22,20 +28,32 @@ window.onload = function () {
             endpoint: repos[name],
             $element: $repo,
         };
-    });
+    });    
 
     // methods
     function enableSubscribeForm() {
-        $subscribeCTA.style.display = 'none';
-        $subscribeForm.style.display = 'block';
+        $subscribeInit.classList.remove('show');
+        $subscribeForm.classList.add('show');
+
+        setTimeout(() => {
+            $firstInput.focus();
+        });
     }
 
     function submitSubscribeForm(e={}) {
         e.preventDefault();
+        
+        $formMessage.classList.remove('show');
+        $subscribeForm.classList.remove('show');
+        $formFeedback.classList.add('show');        
+    }
+
+    function mobileLinkAction(e={}) {
+        $overlayNav.classList.remove(stateClass);
+        $body.classList.remove('unscrollable');
     }
 
     function toggeMobileMenu(e={}) {
-        const stateClass = 'open'
         if ($overlayNav.classList.contains(stateClass)) {
             $overlayNav.classList.remove(stateClass);
             $body.classList.remove('unscrollable');
@@ -45,9 +63,22 @@ window.onload = function () {
         }
     }
 
+    if (location.hash === "#newsletter") {
+        enableSubscribeForm();
+    }
+
     // events
     $burguerMenu.addEventListener('click', toggeMobileMenu);
     $subscribeInit.addEventListener('click', enableSubscribeForm);
+    $subscribeForm.addEventListener('submit', submitSubscribeForm);
+
+    $overlayNavLinks.forEach(($link) => {
+        $link.addEventListener('click', mobileLinkAction);
+    });
+
+    $newsletterLinks.forEach(($link) => {
+        $link.addEventListener('click', enableSubscribeForm);
+    });
 
     // requests
     starRequestsData.forEach((starRequestData) => {
@@ -60,28 +91,22 @@ window.onload = function () {
             }).catch((error) => {
                 starRequestData.$element.innerHTML = 'n/a';
         });
-    })    
-}
-
-// recaptcha
-const subscribeVerifyCallback = function(response) {
-    const $subscribeSubmit = dom.getElementById('subscribe-submit');
-
-    $subscribeSubmit.setAttr("disabled", false);
-};
-  
-const subscribeExpiredCallback = function() {
-    const $subscribeSubmit = dom.getElementById('subscribe-submit');
+    });
     
-    $subscribeSubmit.classList.remove("verified")
-    subscribeSubmit.setAttr("disabled", true);
-};
-  
-window.onloadCallback = function () {
+    // recaptcha
+    const subscribeVerifyCallback = function(response) {
+        $subscribeSubmit.removeAttribute("disabled");
+    };
+    
+    const subscribeExpiredCallback = function() {
+        $subscribeSubmit.classList.remove("verified")
+        $subscribeSubmit.setAttribute("disabled");
+    };
+
     grecaptcha.render('subscribe-recaptcha', {
         'sitekey': gRecaptchaKey,
         'theme': 'light',
         'callback': subscribeVerifyCallback,
         "expired-callback": subscribeExpiredCallback
-    })
-};
+    });
+}
