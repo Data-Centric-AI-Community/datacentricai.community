@@ -42,9 +42,21 @@
             <a href="https://github.com/ydataai" target="_blank" class="link linear">Github</a>
             <a href="#learn-more" target="_self" class="link linear">Learn More</a>            
             <a href="#newsletter" target="_self" class="link round">Newsletter</a>
-        </nav>        
+        </nav>
+        <button class="burguer-menu">
+            <span class="burguer-item burguer-item-top"></span>
+            <span class="burguer-item burguer-item-center"></span>
+            <span class="burguer-item burguer-item-bottom"></span>
+        </button>        
     </header>
 </div>
+
+        <nav class="overlay-nav">
+            <a href="http://slack.ydata.ai/" target="_blank" class="link">Slack</a>
+            <a href="https://github.com/ydataai" target="_blank" class="link">Github</a>
+            <a href="#learn-more" target="_self" class="link">Learn More</a>            
+            <a href="#newsletter" target="_self" class="link">Newsletter</a>
+        </nav>
 
 		<!-- hero section  -->
 		<section class="section">
@@ -230,7 +242,7 @@
 										<label class="label" for="subscribe-email">Email<sup>*</sup></label>
 										<input id="subscribe-email" class="input" name="email" type="text" placeholder="Your Email">
 										<fieldset id="subscribe-recaptcha"></fieldset>
-										<input id="subscribe-submit" class="button submit" type="submit" value="Subscribe" name="submit" disabled="" required>
+										<input id="subscribe-submit" class="button submit" type="submit" value="Subscribe" name="submit" disabled="">
 									</form>
 								</div>
 							</div>
@@ -282,4 +294,13 @@
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6266199.js"></script>
 <script src="./js/uikit.min.js"></script>
 <script src="./js/app.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y53FGGH91Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y53FGGH91Q');
+</script>
 </html>

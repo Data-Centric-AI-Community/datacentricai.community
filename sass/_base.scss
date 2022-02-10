@@ -94,6 +94,12 @@ sup {
 
 // Layout
 
+body {
+    &.unscrollable {
+        overflow: hidden;
+    }
+}
+
 .app {
 	position: relative;
 	height: 100%;
@@ -357,6 +363,33 @@ sup {
     }
 }
 
+.overlay-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: $c-black;    
+    z-index: 200;    
+    transition: all 0.3s ease-out;
+
+    &.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+    }
+    
+    .link {
+        display: block;
+        margin: ($baseSpacing * 6px);
+        text-align: center;
+        color: $c-white;
+        font-size: ($baseSpacing * 5px);
+    }
+}
+
 .form {
     display: block;
     max-width: 460px;
@@ -368,9 +401,19 @@ sup {
     width: 100%;
     margin: ($baseSpacing * 2px) 0 ($baseSpacing * 3px) 0;
     padding: ($baseSpacing * 3px);
-    border: 1px solid $c-greyscale-40;
+    border: 1px solid $c-greyscale-50;
     border-radius: 4px;
     font-size: ($baseSpacing * 3px);
+    outline: 0;
+    transition: $actionTransitions;
+
+    &:focus, &:focus-visible {
+        border-color: $c-greyscale-80;
+    }
+
+    &.error {
+        border-color: $c-primary-60;
+    }
 }
 
 .label {
@@ -509,10 +552,69 @@ sup {
     max-width: 680px;
 }
 
+.burguer-menu {
+    position: relative;
+    display: none;
+    height: 24px;
+    width: 24px;
+    margin: 0 0 0 auto;
+    background-color: $c-black;
+    border: 0;
+    cursor: pointer;
+
+    .burguer-item {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 3px;
+        width: 100%;
+        margin: auto;
+        background-color: $c-white;
+    }
+    
+    .burguer-item-top {
+        top: 0;
+    }
+
+    .burguer-item-center {
+        top: 0;
+        bottom: 0;
+    }
+
+    .burguer-item-bottom {
+        bottom: 0; 
+    }
+}
+
 /* pages */
 
 @media (max-width: $breakpoint-medium) { 
     .app {
+        .header {
+            .nav {
+                display: none;
+            }
+
+            .burguer-menu {
+                display: block;
+            }
+        }
+
+        .repo {
+            display: block;
+            max-width: 450px;
+            margin: auto;
+
+            h3 {
+                text-align: center;
+            }
+
+            .image {
+                display: block;
+                margin: auto;
+            }
+        }
+
         .footer {           
             .logo {
                 display: block;
@@ -544,6 +646,7 @@ sup {
 
         .logo {
             width: 50px;
+            margin-right: ($baseSpacing * 2px);
         }
 
         .hero {
@@ -562,14 +665,7 @@ sup {
 
         .brand {
             justify-content: center;
-        }
-
-        .repo {
-            .image {
-                display: block;
-                margin: auto;
-            }
-        }        
+        }     
     }
 
     .content {
