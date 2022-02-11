@@ -48,7 +48,7 @@ window.onload = function () {
         $subscribeForm.classList.remove('show');
         $formFeedback.classList.add('show');
         setTimeout(() => {
-            window.scrollTo(0, $newsletterSection.offsetTop-40);
+            window.scrollTo(0, $newsletterSection.offsetTop-200);
         });
     }
 
