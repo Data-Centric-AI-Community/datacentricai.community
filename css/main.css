@@ -10200,15 +10200,35 @@ body.unscrollable {
         transform: scaleX(1); }
   .app .section {
     margin: auto;
-    padding: 80px 0; }
+    padding: 80px 0;
+    overflow-x: hidden; }
     .app .section.alternative {
       background-color: #F5F5F5; }
     .app .section .content {
       max-width: 1280px;
       margin: auto; }
   .app .hero {
+    position: relative;
     margin-top: 80px;
     padding: 36px 0; }
+    .app .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -80px;
+      display: block;
+      height: 100%;
+      width: 320px;
+      background-image: url("../assets/landing-left.svg"); }
+    .app .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -80px;
+      display: block;
+      height: 100%;
+      width: 320px;
+      background-image: url("../assets/landing-right.svg"); }
     .app .hero .content {
       display: inline-block;
       width: 50%; }
@@ -10479,6 +10499,25 @@ body.unscrollable {
     display: none; }
   .app .header .burguer-menu {
     display: block; }
+  .app .hero::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -220px;
+    display: block;
+    height: 99%;
+    width: 320px;
+    background-image: url("../assets/landing-left.svg");
+    opacity: 0.3; }
+  .app .hero::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -220px;
+    display: block;
+    height: 99%;
+    width: 320px;
+    opacity: 0.3; }
   .app .repo {
     display: block;
     max-width: 450px;

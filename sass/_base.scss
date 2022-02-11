@@ -211,6 +211,7 @@ body {
 	.section {	
         margin: auto;    
         padding: 80px 0;
+        overflow-x: hidden;
         
         &.alternative {
             background-color: $banner-background-color;
@@ -223,8 +224,31 @@ body {
 	}
 
 	.hero {
+        position: relative;
         margin-top: 80px;
-        padding: ($baseSpacing * 6px) 0;
+        padding: ($baseSpacing * 6px) 0;        
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -80px;
+            display: block;
+            height: 100%;
+            width: 320px;
+            background-image: url("../assets/landing-left.svg");
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -80px;
+            display: block;
+            height: 100%;
+            width: 320px;
+            background-image: url("../assets/landing-right.svg");
+        }
         
         .content {
             display: inline-block;
@@ -630,6 +654,31 @@ body {
 
             .burguer-menu {
                 display: block;
+            }
+        }
+
+        .hero {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: -220px;
+                display: block;
+                height: 99%;
+                width: 320px;
+                background-image: url("../assets/landing-left.svg");
+                opacity: 0.3;
+            }
+    
+            &::after {
+                content: "";
+                position: absolute;
+                top: 20px;
+                right: -220px;
+                display: block;
+                height: 99%;
+                width: 320px;
+                opacity: 0.3;
             }
         }
 
