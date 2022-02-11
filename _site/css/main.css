@@ -10247,7 +10247,7 @@ body.unscrollable {
   .app .newsletter-section .button {
     margin: 36px auto; }
   .app .footer {
-    padding: 0 40px;
+    padding: 0;
     background-color: #000000;
     border-top: 18px solid #E32212;
     text-align: center; }
@@ -10418,7 +10418,14 @@ body.unscrollable {
     position: absolute;
     right: 18px;
     bottom: 18px;
-    color: #E32212; }
+    color: #E32212;
+    font-size: 18px; }
+    .article .link:hover .icon {
+      transform: translateX(6px); }
+  .article .icon {
+    width: 24px;
+    margin-left: 12px;
+    transition: all 0.2s ease; }
 
 .social-links-list {
   display: flex; }
@@ -10487,7 +10494,9 @@ body.unscrollable {
     margin: auto; }
   .app .footer .brand {
     justify-content: center; }
-  .app .footer .heading {
+    .app .footer .brand .image {
+      width: 120px; }
+  .app .footer .social .heading {
     text-align: center; }
   .app .footer .social-links-list {
     align-items: center;
@@ -10495,12 +10504,16 @@ body.unscrollable {
 
 @media (max-width: 640px) {
   .app .top-nav {
-    padding: 12px; }
+    padding: 12px 36px; }
+    .app .top-nav .brand .text, .app .top-nav .brand label {
+      font-size: 16px; }
+    .app .top-nav .brand .text {
+      display: block; }
   .app .logo {
     width: 50px;
     margin-right: 12px; }
   .app .hero {
-    margin-top: 40px; }
+    margin-top: 30px; }
     .app .hero .heading {
       font-size: 30px; }
     .app .hero .button {
@@ -10510,4 +10523,4 @@ body.unscrollable {
   .app .brand {
     justify-content: center; }
   .content {
-    padding: 0 40px; } }
+    padding: 0 18px; } }
