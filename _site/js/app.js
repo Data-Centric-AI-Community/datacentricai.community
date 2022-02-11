@@ -15,6 +15,7 @@ window.onload = function () {
     const $subscribeInit = dom.getElementById('subscribe-init');
     const $subscribeForm = dom.getElementById('subscribe-form');   
     const $subscribeSubmit = dom.getElementById('subscribe-submit');
+    const $newsletterSection = dom.getElementById('newsletter');
     const $formMessage = dom.querySelector('.form-message');
     const $formFeedback = dom.querySelector('.form-feedback');
     const $repos = [...dom.querySelectorAll('[data-star]')];
@@ -45,7 +46,10 @@ window.onload = function () {
         
         $formMessage.classList.remove('show');
         $subscribeForm.classList.remove('show');
-        $formFeedback.classList.add('show');        
+        $formFeedback.classList.add('show');
+        setTimeout(() => {
+            window.scrollTo(0, $newsletterSection.offsetTop-40);
+        });
     }
 
     function mobileLinkAction(e={}) {
