@@ -3,7 +3,7 @@ layout: post
 title:  "Introducing the Data-Centric AI Community"
 #date: "2020-04-08 23:59:21 +0100"
 categories: ydata
-image: ./assets/blog/06.jpeg
+image: ./assets/blog/06.png
 summary: A place to discuss data quality for data science.
 link: https://ydata.ai
 ---
