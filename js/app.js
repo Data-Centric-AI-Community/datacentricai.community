@@ -61,9 +61,11 @@ window.onload = function () {
         if ($overlayNav.classList.contains(stateClass)) {
             $overlayNav.classList.remove(stateClass);
             $body.classList.remove('unscrollable');
+            $burguerMenu.classList.remove('active');
         } else {
             $overlayNav.classList.add(stateClass);
             $body.classList.add('unscrollable');
+            $burguerMenu.classList.add('active');
         }
     }
 

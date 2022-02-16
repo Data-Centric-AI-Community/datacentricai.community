@@ -10164,7 +10164,7 @@ body.unscrollable {
     margin: 0 auto;
     padding: 5px 40px; }
   .app .logo {
-    width: 100px;
+    margin: 0 12px 0 0;
     text-decoration: none;
     color: #1c1d21;
     font-size: 24px;
@@ -10210,7 +10210,7 @@ body.unscrollable {
   .app .hero {
     position: relative;
     margin-top: 80px;
-    padding: 36px 0; }
+    padding: 110px 0; }
     .app .hero::before {
       content: "";
       position: absolute;
@@ -10219,7 +10219,9 @@ body.unscrollable {
       display: block;
       height: 100%;
       width: 320px;
-      background-image: url("../assets/landing-left.svg"); }
+      background-image: url("../assets/landing-left.svg");
+      background-repeat: no-repeat;
+      z-index: 10; }
     .app .hero::after {
       content: "";
       position: absolute;
@@ -10228,7 +10230,12 @@ body.unscrollable {
       display: block;
       height: 100%;
       width: 320px;
-      background-image: url("../assets/landing-right.svg"); }
+      background-image: url("../assets/landing-right.svg");
+      background-repeat: no-repeat;
+      z-index: 10; }
+    .app .hero .heading, .app .hero .description, .app .hero .paragraph {
+      position: relative;
+      z-index: 100; }
     .app .hero .content {
       display: inline-block;
       width: 50%; }
@@ -10275,6 +10282,9 @@ body.unscrollable {
       display: flex;
       align-items: center;
       margin-top: -30px; }
+      .app .footer .brand .heading {
+        font-size: 24px;
+        margin-bottom: 6px; }
       .app .footer .brand .image {
         width: 160px;
         margin-right: 18px; }
@@ -10291,8 +10301,10 @@ body.unscrollable {
     .app .footer .logo {
       display: block;
       width: 200px; }
-    .app .footer .heading .alternative {
-      display: block; }
+    .app .footer .heading .text {
+      display: block;
+      font-weight: normal;
+      font-size: 24px; }
 
 /* components */
 .button {
@@ -10477,6 +10489,14 @@ body.unscrollable {
   background-color: #000000;
   border: 0;
   cursor: pointer; }
+  .burguer-menu.active .burguer-item {
+    left: -20px; }
+  .burguer-menu.active .burguer-item-top {
+    transform: rotate(-45deg) translateY(15px); }
+  .burguer-menu.active .burguer-item-center {
+    display: none; }
+  .burguer-menu.active .burguer-item-bottom {
+    transform: rotate(45deg) translateY(-15px); }
   .burguer-menu .burguer-item {
     position: absolute;
     left: 0;
@@ -10484,7 +10504,8 @@ body.unscrollable {
     height: 3px;
     width: 100%;
     margin: auto;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    transition: transform 0.15s ease-out; }
   .burguer-menu .burguer-item-top {
     top: 0; }
   .burguer-menu .burguer-item-center {
@@ -10499,25 +10520,12 @@ body.unscrollable {
     display: none; }
   .app .header .burguer-menu {
     display: block; }
-  .app .hero::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: -220px;
-    display: block;
-    height: 99%;
-    width: 320px;
-    background-image: url("../assets/landing-left.svg");
-    opacity: 0.3; }
-  .app .hero::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: -220px;
-    display: block;
-    height: 99%;
-    width: 320px;
-    opacity: 0.3; }
+  .app .hero {
+    padding: 36px 0; }
+    .app .hero::before {
+      opacity: 0.4; }
+    .app .hero::after {
+      opacity: 0.4; }
   .app .repo {
     display: block;
     max-width: 450px;
@@ -10552,13 +10560,19 @@ body.unscrollable {
     width: 50px;
     margin-right: 12px; }
   .app .hero {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding: 48px 0; }
     .app .hero .heading {
       font-size: 30px; }
     .app .hero .button {
       display: block;
       width: 100%;
       margin: 24px 0; }
+    .app .hero::before {
+      left: 0;
+      right: 0; }
+    .app .hero::after {
+      display: none; }
   .app .brand {
     justify-content: center; }
   .content {
