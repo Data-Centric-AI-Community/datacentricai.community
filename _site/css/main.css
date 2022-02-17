@@ -10281,8 +10281,10 @@ body.unscrollable {
   .app .footer {
     padding: 0;
     background-color: #000000;
-    border-top: 18px solid #E32212;
+    border-top: 8px solid #E32212;
     text-align: center; }
+    .app .footer .section {
+      padding: 60px 0 36px 0; }
     .app .footer .brand {
       display: flex;
       align-items: center;
