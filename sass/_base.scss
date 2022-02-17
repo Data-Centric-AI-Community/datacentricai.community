@@ -337,8 +337,12 @@ body {
     .footer {
         padding: 0;
         background-color: $layout-footer-background-color;        
-        border-top: ($baseSpacing * 3px) solid $c-primary-60;
+        border-top: 8px solid $c-primary-60;
         text-align: center;
+
+        .section {
+            padding: ($baseSpacing * 10px) 0 ($baseSpacing * 6px) 0;
+        }
         
         .brand {
             display: flex;
