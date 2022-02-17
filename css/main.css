@@ -10128,6 +10128,11 @@ body.unscrollable {
 .app {
   position: relative;
   height: 100%; }
+  .app .scroll-feedback {
+    position: fixed;
+    height: 2px;
+    background-color: #E32212;
+    transition: width 0.05s ease-in-out; }
   .app .header {
     color: #ffffff; }
     .app .header .brand {
@@ -10573,7 +10578,11 @@ body.unscrollable {
       right: 0; }
     .app .hero::after {
       display: none; }
-  .app .brand {
+  .app .footer .brand {
     justify-content: center; }
+    .app .footer .brand .heading {
+      margin-bottom: 0; }
+    .app .footer .brand .heading, .app .footer .brand .text {
+      font-size: 18px; }
   .content {
     padding: 0 18px; } }
