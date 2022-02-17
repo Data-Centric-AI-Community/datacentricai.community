@@ -104,6 +104,13 @@ body {
 	position: relative;
 	height: 100%;
 
+    .scroll-feedback {
+        position: fixed;
+        height: 2px;
+        background-color: $c-primary-60;
+        transition: width 0.05s ease-in-out;
+    }
+
     .header {
         color: $c-white;
 
@@ -793,8 +800,18 @@ body {
             }
         }
 
-        .brand {
-            justify-content: center;
+        .footer {
+            .brand {
+                justify-content: center;
+
+                .heading {
+                    margin-bottom: 0;
+                }
+    
+                .heading, .text {
+                    font-size: 18px;
+                }
+            }
         }
     }
 

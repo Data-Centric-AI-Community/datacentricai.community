@@ -9,6 +9,7 @@ window.onload = function () {
     };
 
     const $body = dom.querySelector('body');
+    const $scrollFeedback = dom.getElementById('scroll-feedback');
     const $burguerMenu = dom.querySelector('.burguer-menu');
     const $overlayNav = dom.querySelector('.overlay-nav');
     const $overlayNavLinks = dom.querySelectorAll('.overlay-nav .link');
@@ -69,6 +70,20 @@ window.onload = function () {
         }
     }
 
+    function calculateScrollPositon() {
+        const pixels = window.pageYOffset;
+        const documentHeight = $body.clientHeight;
+        const windowHeight = window.innerHeight;
+        const difference = documentHeight - windowHeight;
+        const percentage = ((100 * pixels) / difference).toFixed(2);
+
+        $scrollFeedback.style.width = `${percentage}%`;
+    }
+
+    function scrollEvent(e={}) {
+        calculateScrollPositon();
+    }
+
     if (location.hash === "#newsletter") {
         enableSubscribeForm();
     }
@@ -77,6 +92,7 @@ window.onload = function () {
     $burguerMenu.addEventListener('click', toggeMobileMenu);
     $subscribeInit.addEventListener('click', enableSubscribeForm);
     $subscribeForm.addEventListener('submit', submitSubscribeForm);
+    dom.addEventListener('scroll', scrollEvent);
 
     $overlayNavLinks.forEach(($link) => {
         $link.addEventListener('click', mobileLinkAction);
@@ -85,6 +101,8 @@ window.onload = function () {
     $newsletterLinks.forEach(($link) => {
         $link.addEventListener('click', enableSubscribeForm);
     });
+
+    calculateScrollPositon();
 
     // requests
     starRequestsData.forEach((starRequestData) => {
