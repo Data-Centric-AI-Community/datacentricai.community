@@ -10226,7 +10226,8 @@ body.unscrollable {
       width: 320px;
       background-image: url("../assets/landing-left.svg");
       background-repeat: no-repeat;
-      z-index: 10; }
+      z-index: 10;
+      pointer-events: none; }
     .app .hero::after {
       content: "";
       position: absolute;
@@ -10237,8 +10238,9 @@ body.unscrollable {
       width: 320px;
       background-image: url("../assets/landing-right.svg");
       background-repeat: no-repeat;
-      z-index: 10; }
-    .app .hero .heading, .app .hero .description, .app .hero .paragraph {
+      z-index: 10;
+      pointer-events: none; }
+    .app .hero .heading, .app .hero .description, .app .hero .paragraph, .app .hero .button {
       position: relative;
       z-index: 100; }
     .app .hero .content {
