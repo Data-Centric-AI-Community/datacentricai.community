@@ -246,6 +246,7 @@ body {
             background-image: url("../assets/landing-left.svg");
             background-repeat: no-repeat;
             z-index: 10;
+            pointer-events: none;
         }
 
         &::after {
@@ -259,9 +260,10 @@ body {
             background-image: url("../assets/landing-right.svg");
             background-repeat: no-repeat;
             z-index: 10;
+            pointer-events: none;
         }
 
-        .heading, .description, .paragraph {
+        .heading, .description, .paragraph, .button {
             position: relative;
             z-index: 100;
         }
@@ -287,7 +289,7 @@ body {
 			font-size: 48px;
 		}		
 
-        .button {            
+        .button {       
             display: inline-block;
             margin-right: ($baseSpacing * 4px);
 
