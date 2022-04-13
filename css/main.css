@@ -10476,11 +10476,16 @@ body.unscrollable {
 #newsletter .form {
   margin-top: 48px; }
 
+.subscribe-form {
+  margin: auto;
+  max-width: 500px; }
+
 .subscribe-form, .subscribe-init {
   display: none; }
 
 .form-feedback, .form-message {
-  display: none; }
+  display: none;
+  margin-bottom: 48px; }
 
 .show {
   display: block; }
