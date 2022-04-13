@@ -116,21 +116,4 @@ window.onload = function () {
                 starRequestData.$element.innerHTML = 'n/a';
         });
     });
-    
-    // recaptcha
-    const subscribeVerifyCallback = function(response) {
-        $subscribeSubmit.removeAttribute("disabled");
-    };
-    
-    const subscribeExpiredCallback = function() {
-        $subscribeSubmit.classList.remove("verified")
-        $subscribeSubmit.setAttribute("disabled");
-    };
-
-    grecaptcha.render('subscribe-recaptcha', {
-        'sitekey': gRecaptchaKey,
-        'theme': 'light',
-        'callback': subscribeVerifyCallback,
-        "expired-callback": subscribeExpiredCallback
-    });
 }

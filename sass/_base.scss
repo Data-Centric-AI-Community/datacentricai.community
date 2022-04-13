@@ -620,12 +620,18 @@ body {
     }
 }
 
+.subscribe-form {
+    margin: auto;
+    max-width: 500px;
+}
+
 .subscribe-form, .subscribe-init {
     display: none;
 }
 
 .form-feedback, .form-message {
     display: none;
+    margin-bottom: ($baseSpacing * 8px);
 }
 
 .show {
