@@ -5,5 +5,5 @@ title:  "Introducing the Data-Centric AI Community"
 categories: ydata
 image: ./assets/blog/06.png
 summary: A place to discuss data quality for data science.
-link: https://ydata.ai
+link: https://venturebeat.com/2022/02/22/ydata-launches-data-centric-ai-community-for-data-scientists/
 ---
