@@ -21,7 +21,10 @@ window.onload = function () {
     const $formFeedback = dom.querySelector('.form-feedback');
     const $repos = [...dom.querySelectorAll('[data-star]')];
     const $firstInput = dom.getElementById('subscribe-firstname');
+    const $banner = dom.getElementById('banner');
+    const $bannerClose = dom.getElementById('banner-close');
     const $newsletterLinks = dom.querySelectorAll('a[href="#newsletter"]');
+    const $applyNow = dom.querySelectorAll('.apply-now');
     const stateClass = 'open';
     const starRequestsData = $repos.map(($repo) => {
         const name = $repo.getAttribute('data-star');
@@ -84,15 +87,24 @@ window.onload = function () {
         calculateScrollPositon();
     }
 
+    function closeBanner() {
+        $banner.classList.add('hidden');
+    }
+
     if (location.hash === "#newsletter") {
         enableSubscribeForm();
     }
 
     // events
+    $bannerClose.addEventListener('click', closeBanner);
     $burguerMenu.addEventListener('click', toggeMobileMenu);
     $subscribeInit.addEventListener('click', enableSubscribeForm);
     $subscribeForm.addEventListener('submit', submitSubscribeForm);
     dom.addEventListener('scroll', scrollEvent);
+
+    $applyNow.forEach(($btn) => {
+        $btn.addEventListener('click', closeBanner);
+    });
 
     $overlayNavLinks.forEach(($link) => {
         $link.addEventListener('click', mobileLinkAction);

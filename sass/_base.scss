@@ -91,13 +91,16 @@ sup {
      }
 }
 
-
 // Layout
 
 body {
     &.unscrollable {
         overflow: hidden;
     }
+}
+
+.primary {
+    color: $text-color-primary;
 }
 
 .app {
@@ -109,6 +112,94 @@ body {
         height: 2px;
         background-color: $c-primary-60;
         transition: width 0.05s ease-in-out;
+    }
+
+    .contest-section {
+        .uk-container-small {
+            max-width: 840px;
+        }
+    }
+
+    .contest {
+        overflow: hidden;
+        padding: 100px 0;
+        background: linear-gradient(260.09deg, rgba(227, 34, 18, 0.2) 14.74%, rgba(227, 34, 18, 0) 82.72%), linear-gradient(83.66deg, #1C1C1C 0%, rgba(28, 28, 28, 0.9) 100%), #FFFFFF;
+
+        .contest-image {
+            display: block;
+            margin: auto;
+            transform: scale(1.2);
+        }
+
+        .primary {
+            font-weight: bold;
+        }
+
+        .sub-heading {
+            display: block;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .paragraphs {
+            margin-bottom: 80px;
+        }
+
+        .paragraph {
+            font-size: 18px;
+            margin: 16px 0;
+            color: #ffffff;
+        }
+    }
+
+    .banner {
+        position: fixed;
+        top: 120px;
+        left: 0;
+        right: 0;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+        max-width: 976px;
+        padding: 32px 64px;
+        box-shadow: 2px 2px 8px rgba(64, 67, 73, 0.5);
+        margin: auto;
+        font-weight: 300;
+        text-align: left;
+        border-radius: 16px;           
+        z-index: 190;
+
+        .banner-close {
+            position: absolute;            
+            top: 16px;
+            right: 16px;
+            font-family: "Nunito Sans";
+            font-size: 18px;
+            border: 0;
+            background-color: transparent;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .sub-heading {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+        .heading-label {
+            font-weight: bold;
+        }
+
+        .paragraph {
+            margin: 16px 16px 0 0;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .button {
+            display: block;
+            white-space: nowrap;
+        }
     }
 
     .header {
@@ -389,6 +480,11 @@ body {
             }
         }
     }
+
+    /* utils */
+    .hidden {
+        display: none;
+    }
 }
 
 /* components */
@@ -638,6 +734,7 @@ body {
     display: block;
 }
 
+
 /* overrides */
 
 .uk-container-small {
@@ -694,7 +791,7 @@ body {
 
     .burguer-item-bottom {
         bottom: 0; 
-    }
+    }    
 }
 
 /* pages */
@@ -708,6 +805,49 @@ body {
 
             .burguer-menu {
                 display: block;
+            }
+        }        
+
+        .contest {
+            padding: 24px 0 0 0;
+            
+            .contest-image {
+                transform: scale(0.8);
+            }
+
+        }
+
+        .contest-section {
+            padding-top: 60px;
+            padding-bottom: 0;
+
+            .sub-heading, .paragraph, .button {
+                display: block;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .uk-container-small {
+                max-width: 760px;
+            }
+
+            .button {
+                width: 50%;
+            }
+        }
+
+        .banner {
+            padding: 48px;
+            border-radius: 0;
+
+            .sub-heading {
+                font-size: 20px;
+            }
+
+            .paragraph {
+                font-size: 16px;
+                margin: 16px 16px 0 0;
             }
         }
 
@@ -780,6 +920,26 @@ body {
                 .text {
                     display: block;
                 }
+            }
+        }
+
+        .banner {
+            width: 100%;
+            padding: 48px;
+            flex-direction: column;
+
+            .sub-heading {
+                margin-top: 0;
+                text-align: center;
+            }
+
+            .paragraph {
+                margin: 16px 0;
+                text-align: center;
+            }
+
+            .button {
+                width: 100%;
             }
         }
 
