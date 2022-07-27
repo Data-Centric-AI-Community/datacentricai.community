@@ -10316,6 +10316,8 @@ body.unscrollable {
         width: 40%; }
     .app .hero .description {
       margin: 36px auto; }
+      .app .hero .description .paragraph {
+        margin: 0; }
     .app .hero .heading {
       font-size: 48px; }
     .app .hero .button {
@@ -10325,12 +10327,12 @@ body.unscrollable {
         margin-right: 24px; }
   .app .description {
     position: relative;
-    max-width: 680px;
+    max-width: 780px;
     font-size: 18px;
     line-height: 24px;
     margin: auto; }
     .app .description .paragraph {
-      margin: 0; }
+      margin: 12px 0; }
   .app .badges {
     margin-top: 30px; }
     .app .badges .badge {

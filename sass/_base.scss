@@ -374,6 +374,10 @@ body {
 
         .description {
             margin: ($baseSpacing * 6px) auto;
+
+            .paragraph {
+                margin: 0;
+            }
         }
 
 		.heading {
@@ -392,13 +396,13 @@ body {
 
     .description {
         position: relative;
-        max-width: 680px;
+        max-width: 780px;
         font-size: $textHuge;
         line-height: 24px;
         margin: auto;
 
         .paragraph {
-            margin: 0;
+            margin: ($baseSpacing * 2px) 0;
         }
     }
 
