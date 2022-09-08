@@ -17,6 +17,8 @@ window.onload = function () {
     const $subscribeForm = dom.getElementById('subscribe-form');
     const $newsletterSection = dom.getElementById('newsletter');
     const $formMessage = dom.querySelector('.form-message');
+    const $banner = dom.getElementById('banner');
+    const $bannerClose = dom.getElementById('banner-close');
     const $formFeedback = dom.querySelector('.form-feedback');
     const $repos = [...dom.querySelectorAll('[data-star]')];
     const $firstInput = dom.getElementById('subscribe-firstname');
@@ -80,6 +82,10 @@ window.onload = function () {
         $scrollFeedback.style.width = `${percentage}%`;
     }
 
+    function closeBanner() {
+        $banner.classList.add('hidden');
+    }
+
     function scrollEvent(e={}) {
         calculateScrollPositon();
     }
@@ -89,10 +95,15 @@ window.onload = function () {
     }
 
     // events
+    $bannerClose.addEventListener('click', closeBanner);
     $burguerMenu.addEventListener('click', toggeMobileMenu);
     $subscribeInit.addEventListener('click', enableSubscribeForm);
     $subscribeForm.addEventListener('submit', submitSubscribeForm);
     dom.addEventListener('scroll', scrollEvent);
+
+    $applyNow.forEach(($btn) => {
+        $btn.addEventListener('click', closeBanner);
+    });
 
     $overlayNavLinks.forEach(($link) => {
         $link.addEventListener('click', mobileLinkAction);
