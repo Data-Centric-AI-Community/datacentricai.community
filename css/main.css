@@ -10161,7 +10161,7 @@ body.unscrollable {
       color: #ffffff; }
   .app .banner {
     position: fixed;
-    top: 6%;
+    top: 10%;
     left: 0;
     right: 0;
     max-width: 1300px;
@@ -10190,19 +10190,20 @@ body.unscrollable {
       cursor: pointer; }
     .app .banner .sub-heading {
       max-width: none;
-      font-size: 24px;
+      font-size: 20px;
       margin: 0; }
     .app .banner .heading-label {
       font-weight: bold; }
     .app .banner .paragraph {
       margin: 16px 16px 0 0;
-      font-size: 18px;
+      font-size: 16px;
       color: #ffffff; }
     .app .banner .list {
       list-style: circle;
       margin: 0; }
     .app .banner .button {
-      white-space: nowrap; }
+      white-space: nowrap;
+      font-size: 16px; }
   .app .header {
     color: #ffffff; }
     .app .header .brand {
