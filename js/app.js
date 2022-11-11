@@ -20,8 +20,7 @@ window.onload = function () {
     const $banner = dom.getElementById('banner');
     const $bannerClose = dom.getElementById('banner-close');
     const $formFeedback = dom.querySelector('.form-feedback');
-    const $repos = [...dom.querySelectorAll('[data-star]')];
-    const $firstInput = dom.getElementById('subscribe-firstname');
+    const $repos = [...dom.querySelectorAll('[data-star]')];    
     const $newsletterLinks = dom.querySelectorAll('a[href="#newsletter"]');
     const $applyNow = dom.querySelectorAll('.apply-now');
     const stateClass = 'open';
@@ -38,10 +37,6 @@ window.onload = function () {
     function enableSubscribeForm() {
         $subscribeInit.classList.remove('show');
         $subscribeForm.classList.add('show');
-
-        setTimeout(() => {
-            $firstInput.focus();
-        });
     }
 
     function submitSubscribeForm(e={}) {
@@ -95,7 +90,7 @@ window.onload = function () {
     }
 
     // events
-    $bannerClose.addEventListener('click', closeBanner);
+    // $bannerClose.addEventListener('click', closeBanner);
     $burguerMenu.addEventListener('click', toggeMobileMenu);
     $subscribeInit.addEventListener('click', enableSubscribeForm);
     $subscribeForm.addEventListener('submit', submitSubscribeForm);
