@@ -5,7 +5,7 @@ window.onload = function () {
     const dom = document;
     const repos = {
         'ydata-synthetic': 'https://api.github.com/repos/ydataai/ydata-synthetic',
-        'pandas-profiling': 'https://api.github.com/repos/pandas-profiling/pandas-profiling',
+        'ydata-profiling': 'https://api.github.com/repos/ydataai/ydata-profiling',
     };
 
     const $body = dom.querySelector('body');
