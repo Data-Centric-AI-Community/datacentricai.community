@@ -1,5 +1,39 @@
-<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M60 5L60 116" stroke="#E32212" stroke-width="2" stroke-dasharray="4 4"/>
-<path d="M113 49L92 37L71 49M113 49L92 61M113 49V73L92 85M92 61L71 49M92 61V85M71 49V73L92 85" stroke="#E32212" stroke-width="2" stroke-linejoin="bevel"/>
-<path opacity="0.4" d="M49 49L28 37L7 49M49 49L28 61M49 49V73L28 85M28 61L7 49M28 61V85M7 49V73L28 85" stroke="#E32212" stroke-width="2" stroke-linejoin="bevel"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .node { fill: #64748b; }
+      .connection { fill: none; stroke: #94a3b8; stroke-width: 1.5; }
+      .main-node { fill: #3b82f6; }
+    </style>
+  </defs>
+  
+  <!-- Network connections -->
+  <line class="connection" x1="30" y1="30" x2="50" y2="50" />
+  <line class="connection" x1="70" y1="30" x2="50" y2="50" />
+  <line class="connection" x1="30" y1="70" x2="50" y2="50" />
+  <line class="connection" x1="70" y1="70" x2="50" y2="50" />
+  
+  <line class="connection" x1="15" y1="20" x2="30" y2="30" />
+  <line class="connection" x1="85" y1="20" x2="70" y2="30" />
+  <line class="connection" x1="15" y1="80" x2="30" y2="70" />
+  <line class="connection" x1="85" y1="80" x2="70" y2="70" />
+  
+  <line class="connection" x1="30" y1="30" x2="30" y2="70" />
+  <line class="connection" x1="70" y1="30" x2="70" y2="70" />
+  <line class="connection" x1="30" y1="30" x2="70" y2="30" />
+  <line class="connection" x1="30" y1="70" x2="70" y2="70" />
+  
+  <!-- Network nodes -->
+  <circle class="node" cx="15" cy="20" r="3" />
+  <circle class="node" cx="85" cy="20" r="3" />
+  <circle class="node" cx="15" cy="80" r="3" />
+  <circle class="node" cx="85" cy="80" r="3" />
+  
+  <circle class="node" cx="30" cy="30" r="4" />
+  <circle class="node" cx="70" cy="30" r="4" />
+  <circle class="node" cx="30" cy="70" r="4" />
+  <circle class="node" cx="70" cy="70" r="4" />
+  
+  <!-- Central node -->
+  <circle class="main-node" cx="50" cy="50" r="6" />
 </svg>
