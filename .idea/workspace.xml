@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4c145801-31ad-460b-ad24-7f7299c27573" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/datacenteriai_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/datacentricai_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/logo-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-02-09-article-1.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-02-09-article-2.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-02-09-article-3.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-02-09-article-4.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-02-09-article-5.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-02-09-article-6.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/minima-social-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/css/fonts/NunitoSans/NunitoSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/css/fonts/NunitoSans/NunitoSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/js/uikit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/article.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/column.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/comment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/countdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/cover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/description-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/dotnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/drop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/form-range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/grid-masonry.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/heading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/height.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/iconnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/inverse.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/label.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/leader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/lightbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/margin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/marker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/notification.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/overlay.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/padding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/placeholder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/search.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/slidenav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/slideshow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/sortable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/sticky.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/subnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/svg.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/switcher.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/tab.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/thumbnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/tile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/totop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/utility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/components/width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/mixins-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/article.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/column.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/comment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/countdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/description-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/dotnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/drop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/form-range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/heading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/height.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/iconnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/inverse.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/label.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/leader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/lightbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/margin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/marker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/notification.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/overlay.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/padding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/placeholder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/search.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/slidenav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/sortable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/sticky.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/subnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/tab.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/thumbnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/tile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/totop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/utility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/theme/width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/uikit-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/uikit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/variables-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/UIkit/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/chevron-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/chevron-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/data-labeling.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-labeling.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/data-profiling.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-profiling.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/discord.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/discord.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/github.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/github.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo-red.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo-ydata.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/synthetic-data.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/synthetic-data.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NunitoSans/NunitoSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NunitoSans/NunitoSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fonts/NunitoSans/NunitoSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/uikit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/_import.components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/_import.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/_import.utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/article.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/column.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/comment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/countdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/cover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/description-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/dotnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/drop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/form-range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/grid-masonry.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/heading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/height.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/iconnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/inverse.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/label.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/leader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/lightbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/margin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/marker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/notification.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/overlay.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/padding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/placeholder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/search.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/slidenav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/slideshow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/sortable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/sticky.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/subnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/svg.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/switcher.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/tab.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/thumbnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/tile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/totop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/utility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/components/width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/mixins-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/_import.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/article.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/column.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/comment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/countdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/description-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/dotnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/drop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/form-range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/heading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/height.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/iconnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/inverse.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/label.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/leader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/lightbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/margin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/marker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/notification.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/overlay.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/padding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/placeholder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/search.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/slidenav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/sortable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/sticky.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/subnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/tab.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/thumbnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/tile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/totop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/utility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/theme/width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/uikit-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/uikit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/variables-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/UIkit/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_UIkit-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feat/pages" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fabclmnt&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Data-Centric-AI-Community/datacentricai.community.git&quot;,
+    &quot;accountId&quot;: &quot;5f56b6da-282e-4fba-a416-2e75e6e9f2c2&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="319HmJzFAILlJaHMLuuuAtXwO4h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feat/updt",
+    "last_opened_file_path": "/Users/fabianaclemente/Documents/github/datacentricai.community",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/PyCharm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
+        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c145801-31ad-460b-ad24-7f7299c27573" name="Changes" comment="" />
+      <created>1754929526404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754929526404</updated>
+      <workItem from="1754929527462" duration="6316000" />
+      <workItem from="1754937972974" duration="980000" />
+      <workItem from="1754945383437" duration="1371000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,9 +1,30 @@
-<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M77.5 102L88 96V48M77.5 102V54M77.5 102L67 96V48M88 48L77.5 54M88 48L77.5 42L67 48M77.5 54L67 48" stroke="#E32212" stroke-width="2"/>
-<path d="M56.5 114L67 108.037V73.963M56.5 114V79.9259M56.5 114L46 108.037V73.963M67 73.963L56.5 79.9259M67 73.963L56.5 68L46 73.963M56.5 79.9259L46 73.963" stroke="#E32212" stroke-width="2"/>
-<path d="M98.5 90L109 84V60M98.5 90V66M98.5 90L88 84V60M109 60L98.5 66M109 60L98.5 54L88 60M98.5 66L88 60" stroke="#E32212" stroke-width="2"/>
-<path opacity="0.4" d="M41 23.5L28 16L15 23.5L28 31L41 23.5Z" stroke="#E32212" stroke-width="2" stroke-linejoin="bevel"/>
-<path opacity="0.4" d="M11 45L24 52.3333V67L11 59.6667V45Z" stroke="#E32212" stroke-width="2" stroke-linejoin="bevel"/>
-<path opacity="0.4" d="M54 7L67 14.3333V29L54 21.6667V7Z" stroke="#E32212" stroke-width="2" stroke-linejoin="bevel"/>
-<path opacity="0.4" d="M35 39.3333L48 32V46.6667L35 54V39.3333Z" stroke="#E32212" stroke-width="2" stroke-linejoin="bevel"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .chart-bar { fill: #64748b; }
+      .chart-line { fill: none; stroke: #3b82f6; stroke-width: 2; }
+      .chart-axis { fill: none; stroke: #94a3b8; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Chart axes -->
+  <line class="chart-axis" x1="20" y1="80" x2="80" y2="80" />
+  <line class="chart-axis" x1="20" y1="80" x2="20" y2="20" />
+  
+  <!-- Bar chart -->
+  <rect class="chart-bar" x="25" y="60" width="8" height="20" />
+  <rect class="chart-bar" x="37" y="45" width="8" height="35" />
+  <rect class="chart-bar" x="49" y="30" width="8" height="50" />
+  <rect class="chart-bar" x="61" y="50" width="8" height="30" />
+  <rect class="chart-bar" x="73" y="40" width="8" height="40" />
+  
+  <!-- Trend line -->
+  <polyline class="chart-line" points="29,65 41,52 53,37 65,47 77,42" />
+  
+  <!-- Data points -->
+  <circle fill="#1e3a8a" cx="29" cy="65" r="2" />
+  <circle fill="#1e3a8a" cx="41" cy="52" r="2" />
+  <circle fill="#1e3a8a" cx="53" cy="37" r="2" />
+  <circle fill="#1e3a8a" cx="65" cy="47" r="2" />
+  <circle fill="#1e3a8a" cx="77" cy="42" r="2" />
 </svg>
